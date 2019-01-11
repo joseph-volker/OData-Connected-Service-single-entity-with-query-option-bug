@@ -15,7 +15,7 @@ namespace ConsoleApp
 				var person = tripPinContainer.People
 					.AddQueryOption("$expand", "Friends")
 					.ByKey("russellwhyte")
-					.GetValue(); //this throws an ArgumentException because the path generated will be "/People?$expand=Friends('russellwhyte')
+					.GetValue(); //this throws an ArgumentException because the path generated will be "/People?$expand=Friends('russellwhyte')"
 
 				/*
 				 * this is a valid request: https://services.odata.org/TripPinRESTierService/People('russellwhyte')?$expand=Friends
