@@ -1,0 +1,12 @@
+System.ArgumentException
+  HResult=0x80070057
+  Message=Expected a relative URL path without query or fragment.
+Parameter name: entitySetName
+  Source=Microsoft.OData.Client
+  StackTrace:
+   at Microsoft.OData.Client.DataServiceContext.ValidateEntitySetName(String& entitySetName)
+   at Microsoft.OData.Client.DataServiceContext.CreateSingletonQuery[T](String singletonName)
+   at Microsoft.OData.Client.DataServiceQuerySingle`1..ctor(DataServiceContext context, String path)
+   at Microsoft.OData.Service.Sample.TrippinInMemory.Models.PersonSingle..ctor(DataServiceContext context, String path) in C:\Repos\OData Connected Service Demo\ConsoleApp\Connected Services\TripPin\TripPin.cs:line 387
+   at Microsoft.OData.Service.Sample.TrippinInMemory.Models.ExtensionMethods.ByKey(DataServiceQuery`1 source, String userName) in C:\Repos\OData Connected Service Demo\ConsoleApp\Connected Services\TripPin\TripPin.cs:line 2605
+   at ConsoleApp.Program.Main() in C:\Repos\OData Connected Service Demo\ConsoleApp\Program.cs:line 13
